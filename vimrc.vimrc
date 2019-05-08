@@ -34,14 +34,15 @@ autocmd FileType c	inoremap <c-k> <esc>:YcmCompleter GoToDefinition<cr>
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 autocmd FileType go noremap <c-b> :GoBuild<cr>
-autocmd FileType go noremap <c-i> :GoInstall<cr>
+autocmd FileType go noremap <c-i> :GoImports<cr>
 autocmd FileType go noremap <c-t> :GoTest<cr>
 autocmd FileType go noremap <c-r> :GoRun<cr>
 autocmd FileType go noremap <c-h> :GoDoc<cr>
 autocmd FileType go noremap <c-j> :GoDef<cr>
 autocmd FileType go noremap <c-l> :GoMetaLinter<cr>
+autocmd FileType go noremap <c-l> :GoMetaLinter<cr>
 autocmd FileType go inoremap <c-b> <esc>:GoBuild<cr>
-autocmd FileType go inoremap <c-i> <esc>:GoInstall<cr>
+autocmd FileType go inoremap <c-i> <esc>:GoImports<cr>
 autocmd FileType go inoremap <c-t> <esc>:GoTest<cr>
 autocmd FileType go inoremap <c-r> <esc>:GoRun<cr>
 autocmd FileType go inoremap <c-h> <esc>:GoDoc<cr>
