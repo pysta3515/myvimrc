@@ -27,7 +27,6 @@ let g:ycm_semantic_triggers =  {'c': ['->', '.', 're!\w{2}'],'go': ['.', 're!\w{
 autocmd FileType c	noremap <c-h> :YcmCompleter GoToInclude<cr>
 autocmd FileType c	noremap <c-j> :YcmCompleter GoToDeclaration<cr>
 autocmd FileType c	noremap <c-k> :YcmCompleter GoToDefinition<cr>
-autocmd FileType go noremap <c-j> :GoDef<cr>
 autocmd FileType c	inoremap <c-h> <esc>:YcmCompleter GoToInclude<cr>
 autocmd FileType c	inoremap <c-j> <esc>:YcmCompleter GoToDeclaration<cr>
 autocmd FileType c	inoremap <c-k> <esc>:YcmCompleter GoToDefinition<cr>
