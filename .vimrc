@@ -15,8 +15,8 @@ syntax on " 开启语法高亮
 filetype plugin indent on
 inoremap <c-s> <esc>:w<cr>
 noremap <c-s> <esc>:w<cr>
-noremap <c-q> :q<cr>
-inoremap <c-q> :q<cr>
+noremap <c-c> :q<cr>
+inoremap <c-c> :q<cr>
 
 call plug#begin('~/.vim/plugged')
 
@@ -34,9 +34,9 @@ autocmd FileType c	inoremap <c-k> <esc>:YcmCompleter GoToDefinition<cr>
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 autocmd FileType go noremap <c-b> :GoBuild<cr>
-autocmd FileType go noremap <c-i> :GoImports<cr>
+autocmd FileType go noremap <c-f> :GoImports<cr>
 autocmd FileType go noremap <c-t> :GoTest<cr>
-autocmd FileType go noremap <c-r> :GoRun<cr>
+autocmd FileType go noremap <c-u> :GoRun<cr>
 autocmd FileType go noremap <c-h> :GoDoc<cr>
 autocmd FileType go noremap <c-j> :GoDef<cr>
 autocmd FileType go noremap <c-l> :GoMetaLinter<cr>
