@@ -50,6 +50,7 @@ autocmd FileType c	noremap <leader>t :YcmCompleter GetType<cr>
 autocmd FileType c	noremap <leader>d :YcmCompleter GetDoc<cr>
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+let g:go_fmt_command = "goimports"
 autocmd FileType go noremap <leader>tt :GoTest<cr>
 autocmd FileType go noremap <leader>t :GoTestFunc<cr>
 autocmd FileType go noremap <leader>dg :GoDebugStart<cr>
